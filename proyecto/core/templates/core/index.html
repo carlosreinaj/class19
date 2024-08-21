@@ -6,11 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    {% for pais in paises %}
-        <p>{{ pais }}</p>
-        
-    {% endfor %}
-    <button><a href="{% url 'clientes:index' %}">Volver</a></button>
-    
+    <h1>HOME</h1>
+    <a href="{% url 'clientes:index' %}">App Clientes</a>
 </body>
 </html>

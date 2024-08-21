@@ -6,11 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    {% for pais in paises %}
-        <p>{{ pais }}</p>
-        
+    {% for cliente in clientes %}
+    <p>{{ cliente }} - {{ cliente.pais_origen_id }}</p>
+    
     {% endfor %}
     <button><a href="{% url 'clientes:index' %}">Volver</a></button>
-    
 </body>
 </html>
